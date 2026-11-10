@@ -1,0 +1,24 @@
+---
+---
+<section class="hero">
+  <p class="eyebrow">{{ site.author.job_title }} · {{ site.author.location }}</p>
+  <h1>Alex Padilla writes about private capital, private credit and investing in Puerto Rico.</h1>
+  <p class="lede">I work in private equity in Puerto Rico. This is where I share what I'm learning about fund finance, deal structuring, Act 60 and how capital is reshaping the island's economy.</p>
+  <p class="cta"><a class="button" href="{{ '/blog/' | relative_url }}">Read the latest</a> <a class="text-link" href="{{ '/about/' | relative_url }}">About me &rarr;</a></p>
+</section>
+
+<section>
+  <h2 class="section-title">Recent writing</h2>
+  {% assign recent = site.posts | slice: 0, 5 %}
+  {% include post-list.html posts=recent %}
+  {% if site.posts.size > 5 %}<p><a class="text-link" href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>{% endif %}
+</section>
+
+<section class="topics">
+  <h2 class="section-title">What I write about</h2>
+  <div class="grid">
+    <div><h3>Private credit</h3><p>How loans are structured, secured and underwritten, and what goes wrong when they aren't.</p></div>
+    <div><h3>Fund finance</h3><p>NAV, capital calls, distributions and the operating discipline behind a well-run fund.</p></div>
+    <div><h3>Puerto Rico</h3><p>Act 60, local capital markets and where the real opportunities on the island are.</p></div>
+  </div>
+</section>

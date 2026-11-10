@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="links">
+      {% if site.author.linkedin != "" %}<a href="{{ site.author.linkedin }}" rel="me">LinkedIn</a>{% endif %}
+      {% if site.author.x != "" %}<a href="{{ site.author.x }}" rel="me">X</a>{% endif %}
+      {% if site.author.email != "" %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </p>
+    <p class="disclaimer">The views expressed here are my own and do not represent any employer, fund or client. Nothing on this site is investment, tax, legal or accounting advice, or an offer to sell or a solicitation to buy any security.</p>
+    <p class="copy">&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+  </div>
+</footer>

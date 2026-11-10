@@ -1,0 +1,43 @@
+# ------------------------------------------------------------
+# Site settings. Edit the values in quotes, then commit.
+# ------------------------------------------------------------
+title: "Alex Padilla"
+tagline: "Finance, private capital and Puerto Rico"
+description: "Alex Padilla is a finance executive in Puerto Rico writing about private capital, private credit, fund finance and investing in Puerto Rico."
+url: "https://alexpadillapr.com"
+baseurl: ""
+lang: en_US
+timezone: America/Puerto_Rico
+
+author:
+  name: "Alex Padilla"
+  job_title: "Director of Finance"
+  location: "Puerto Rico"   # e.g. "San Juan, Puerto Rico"
+  # Paste your full profile links below. Leave blank ("") to hide one.
+  linkedin: ""        # e.g. "https://www.linkedin.com/in/your-handle/"
+  x: ""               # e.g. "https://x.com/your-handle"
+  email: ""           # optional public email, e.g. "alex@alexpadillapr.com"
+
+# Search and social preview settings (used by jekyll-seo-tag)
+social:
+  name: "Alex Padilla"
+  links: []           # optional: list the same profile URLs here as well
+
+permalink: /blog/:title/
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "" }
+    values:
+      layout: "default"
+      # image: /assets/img/alex-padilla.jpg   # remove the # at the start after you upload a headshot
+
+exclude:
+  - README.md
